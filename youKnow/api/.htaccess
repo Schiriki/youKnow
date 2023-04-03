@@ -1,0 +1,6 @@
+RewriteEngine On
+
+# Handle Front Controller
+RewriteCond %{REQUEST_FILENAMEE} !-d
+RewriteCond %{REQUEST_FILENAMEE} !-f 
+RewriteRule ^ index.php [L]
